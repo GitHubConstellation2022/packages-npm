@@ -1,0 +1,22 @@
+{
+  "name": "addition-two-numbers-module",
+  "version": "0.0.0",
+  "description": "two numbers addition",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nishantms/sample-npm-publish.git"
+  },
+  "keywords": [
+    "publish"
+  ],
+  "author": "nishant gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nishantms/sample-npm-publish/issues"
+  },
+  "homepage": "https://github.com/nishantms/sample-npm-publish#readme"
+}
