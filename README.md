@@ -17,7 +17,7 @@ This repository can be used as a reference guide/sample to enable publishing you
 
 * Install Node.js
 ```
-1. Go to the [Node.js Downloads page](https://nodejs.org/en/download/)
+1. Go to the Node.js Downloads page https://nodejs.org/en/download
 2. Download Node.js for macOS by clicking the "Macintosh Installer" option
 3. Run the downloaded Node.js .pkg Installer
 4. Run the installer, including accepting the license, selecting the destination, and authenticating for the install.
@@ -36,7 +36,7 @@ https://www.npmjs.com/signup
 * Logging in to the npm account using `npm login`
 
 ```
-➜  sample-npm-publish git:(main) ✗ npm login
+➜  packages-npm git:(main) ✗ npm login
 npm notice Log in on https://registry.npmjs.org/
 Username: nishgupta
 Password:
@@ -49,7 +49,7 @@ Logged in as nishgupta on https://registry.npmjs.org/.
 ### 2. Initializing a package is required before publishing using `npm init`
 
 ```
-➜  sample-npm-publish git:(main) ✗ npm init
+➜  packages-npm git:(main) ✗ npm init
 This utility will walk you through creating a package.json file.
 It only covers the most common items, and tries to guess sensible defaults.
 
@@ -60,19 +60,19 @@ Use `npm install <pkg>` afterwards to install a package and
 save it as a dependency in the package.json file.
 
 Press ^C at any time to quit.
-package name: (sample-npm-publish) sample-npm-publish
+package name: (addition-two-numbers-module) addition-two-numbers-module
 version: (1.0.0) 0.0.0
 description: sample package to demonstrate npm publish
 entry point: (index.js)
 test command:
-git repository: (https://github.com/nishantms/sample-npm-publish)
+git repository: (https://github.com/nishantms/packages-npm)
 keywords: publish
 author: nishant gupta
 license: (ISC)
-About to write to /Users/nishantms/sample-npm-publish/package.json:
+About to write to /Users/nishantms/packages-npm/package.json:
 
 {
-  "name": "sample-npm-publish",
+  "name": "addition-two-numbers-module",
   "version": "0.0.0",
   "description": "sample package to demonstrate npm publish",
   "main": "index.js",
@@ -81,7 +81,7 @@ About to write to /Users/nishantms/sample-npm-publish/package.json:
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nishantms/sample-npm-publish.git"
+    "url": "git+https://github.com/nishantms/packages-npm.git"
   },
   "keywords": [
     "publish"
@@ -89,9 +89,9 @@ About to write to /Users/nishantms/sample-npm-publish/package.json:
   "author": "nishant gupta",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nishantms/sample-npm-publish/issues"
+    "url": "https://github.com/nishantms/packages-npm/issues"
   },
-  "homepage": "https://github.com/nishantms/sample-npm-publish#readme"
+  "homepage": "https://github.com/nishantms/packages-npm#readme"
 }
 
 
@@ -119,14 +119,14 @@ module.exports = addFns
 To check if your package name is usable or not, go to the command-line and type `npm search addition-two-numbers-module`
 
 ```
-➜  sample-npm-publish git:(main) ✗ npm search addition-two-numbers-module
+➜  packages-npm git:(main) ✗ npm search addition-two-numbers-module
 No matches found for "addition-two-numbers-module"
 ```
 
 Now after checking the name availability, go to command-line/terminal and type `npm publish`
 
 ```
-➜  sample-npm-publish git:(main) ✗ npm publish
+➜  packages-npm git:(main) ✗ npm publish
 npm notice
 npm notice 📦  addition-two-numbers-module@0.0.0
 npm notice === Tarball Contents ===
@@ -163,8 +163,8 @@ The published package is available at the following URL: `https://www.npmjs.com/
 * Make a fresh project directory.
 
 ```
-➜  sample-npm-publish git:(main) ✗ mkdir use-package
-➜  sample-npm-publish git:(main) ✗ cd use-package
+➜  packages-npm git:(main) ✗ mkdir use-package
+➜  packages-npm git:(main) ✗ cd use-package
 ```
 
 * In the terminal, type `npm init` to initialize the Node project.
@@ -189,7 +189,7 @@ git repository:
 keywords:
 author:
 license: (ISC)
-About to write to /Users/nishantms/sample-npm-publish/use-package/package.json:
+About to write to /Users/nishantms/packages-npm/use-package/package.json:
 
 {
   "name": "use-package",
